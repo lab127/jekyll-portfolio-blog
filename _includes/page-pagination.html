@@ -1,0 +1,19 @@
+<nav class="backnext btnbottom" role="navigation">
+  {% if page.previous %}
+    <a class="back" href="{{ page.previous.url | relative_url }}">
+      <h4 class="bpointer">Previous</h4>
+      <span class="btitle">
+        <i class="icon fa-long-arrow-left"></i>  {{ page.previous.title | markdownify | strip_html }}
+      </span>
+    </a>
+  {% endif %}
+
+  {% if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}">
+      <h4 class="npointer">Next</h4>
+      <span class="ntitle">
+        {{ page.next.title | markdownify | strip_html }}  <i class="icon fa-long-arrow-right"></i>
+      </span>
+    </a>
+  {% endif %}
+</nav>
