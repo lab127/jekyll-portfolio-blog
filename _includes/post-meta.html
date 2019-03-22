@@ -1,0 +1,18 @@
+{%- assign author = site.data.author[page.author] | default: site.author -%}
+{% if page.categories.size > 0 %}
+  <p>Post filed under</p>
+  <div class="tag_cloud_widget">
+    <ul class="list">
+      {%- for category in page.categories -%}
+      <li>{{ category }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{% endif %}
+<p><i class="lnr lnr-calendar-full"></i> {{ page.date | date_to_string }}</p>
+<img class="author_img rounded-circle" src="/images/avatar/{{ author.avatar }}" alt="">
+<h4>{{ author.name }}</h4>
+<div class="social_icon">
+  <a href="//github.com"><i class="fa fa-github"></i></a>
+</div>
+<p>{{ author.bio }}</p>

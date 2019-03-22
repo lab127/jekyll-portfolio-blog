@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include masthead.html %}
+
+{{ content }}
+
+<div class="blog_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="blog_left_sidebar">
+          {%- if site.plugins contains 'jekyll-paginate' and page.paginate or site.gems contains 'jekyll-paginate' and page.paginate -%}
+            {%- comment -%}
+              Add paginator.posts loop if jekyll-paginate plugin is enabled
+              and page.paginate == true
+            {%- endcomment -%}
+            {% include posts-paginated.html %}
+          {%- else -%}
+            {% include posts-limit.html %}
+          {%- endif -%}
+        </div> <!-- end blog_left_sidebar -->
+      </div>
+      <div class="col-lg-4">
+        {% include sidebar-right.html %}
+      </div>
+    </div>
+  </div>
+</div>

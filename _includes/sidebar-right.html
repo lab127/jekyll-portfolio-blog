@@ -1,0 +1,23 @@
+<div class="blog_right_sidebar">
+  {% if page.is_post %}
+  <aside class="single_sidebar_widget popular_post_widget">
+    <h3 class="widget_title">Related Posts</h3>
+    {% for entry in site.related_posts limit:4 %}
+      {% include posts-sidebar.html %}
+    {% endfor %}
+    <div class="br"></div>
+  </aside>
+  {% else %}
+  <aside class="single_sidebar_widget popular_post_widget">
+    <h3 class="widget_title">Recent Posts</h3>
+    {% for entry in site.posts limit:4 %}
+      {% include posts-sidebar.html %}
+    {% endfor %}
+    <div class="br"></div>
+  </aside>
+  {% endif %}
+  <aside class="single_sidebar_widget ads_widget">
+    <a href="#"><img class="img-fluid" src="/assets/img/blog/add.jpg" alt=""></a>
+    <div class="br"></div>
+  </aside>
+</div>

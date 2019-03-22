@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
-    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">
+
+{% include masthead.html %}
+
+<div class="blog_area single-post-area">
+  <div class="container">
+  	<div class="blog_details">
       {{ content }}
     </div>
-  </section>
+  </div>    
+</div>

@@ -1,26 +1,24 @@
-<!-- Header -->
-<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
-  <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-  <nav id="nav">
-    <ul>
-      <li class="special">
-        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-        <div id="menu">
-          <ul>
-            <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>{%
-            assign sorted_pages = site.pages | sort: 'key','last' %}{%
-            for my_page in sorted_pages %}{%
-              if my_page.title %}{%
-                unless my_page.options contains 'nomenu' %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{%
-                endunless %}{%
-              endif %}{%
-            endfor %}
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
-                   class="icon fa-feed"> RSS Feed</a></li>
-          </ul>
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="{{ '/' | relative_url }}"><img src="/assets/img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-center">
+              <li class="nav-item active"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#portfolio">Portfolio</a>
+              <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+            </ul>
+          </div>
         </div>
-      </li>
-    </ul>
-  </nav>
-</header>
+      </nav>
+    </div>
+  </header>

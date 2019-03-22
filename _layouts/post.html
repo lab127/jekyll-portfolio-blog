@@ -1,16 +1,48 @@
 ---
 layout: default
 ---
-  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
-    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">
 
-      <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span>
-      <hr style="margin-top:3px;" />
-      {% include techlist.html %}
+{% include masthead.html %}
 
-      {{ content }}
 
-      {% include page-pagination.html %}
-
+<div class="blog_area single-post-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="blog_left_sidebar">
+          <div class="row single-post">
+            <div class="col-lg-12">
+              {% if page.image %}
+              <div class="featured-img">
+                <img class="img-fluid" src="/images/750x/{{ page.image }}" alt="{{ page.title }}">
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-lg-12 blog_details">
+              <div class="post-meta">
+                <ul class="list">
+                  {%- assign author = site.data.author[page.author] | default: site.author -%}
+                  <li><i class="lnr lnr-user"></i> {{ author.name }}</li>
+                  <li><i class="lnr lnr-calendar-full"></i> <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time></li>
+                </ul>
+              </div>
+              <div class="tag_cloud">
+                <ul class="list">
+                {% for tag in page.tags %}
+                  <li>{{ tag }}</li>
+                {% endfor %}
+                </ul>
+              </div>
+              <h2>{{ page.title }}</h2>
+              {{ content }}
+            </div>
+          </div>
+          {% include post-pagination.html %}
+        </div> <!-- end blog_left_sidebar -->
+      </div>
+      <div class="col-lg-4">
+        {% include sidebar-right.html %}
+      </div>
     </div>
-  </section>
+  </div>
+</div>

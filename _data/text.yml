@@ -1,0 +1,65 @@
+# Theme text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  skip_links: "Skip links"
+  skip_primary_nav: "Skip to primary navigation"
+  skip_content: "Skip to content"
+  skip_footer: "Skip to footer"
+  menu_label: "Menu"
+  by: "by"
+  min_read: "min read"
+  read_more: "Read more&hellip;"
+  categories: "Categories"
+  tags: "Tags"
+  pages_categorized: "Pages filed under"
+  pages_tagged: "Pages tagged"
+  table_of_contents: "Table of Contents"
+  results_found: "Result(s) found"
+  share: "Share"
+  tweet: "Tweet"
+  next: "Next"
+  previous: "Previous"
+  newer: "Newer"
+  older: "Older"
+  back_to_top: "Back to Top"
+  search_placeholder_text: "Enter your search term..."
+  powered_by: "Powered by"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Indonesian
+# ----------
+id: &DEFAULT_ID
+  skip_links: "Lewati links"
+  skip_primary_nav: "Loncat ke navigasi"
+  skip_content: "Loncat ke content"
+  skip_footer: "Loncat ke footer"
+  menu_label: "Menu"
+  by: "oleh"
+  min_read: "Waktu baca"
+  read_more: "Pelajari lagi&hellip;"
+  categories: "Katagori"
+  tags: "Grup"
+  pages_categorized: "Berada dalam"
+  pages_tagged: "Halaman grup"
+  table_of_contents: "Daftar Isi"
+  results_found: "Hasil ditemukan"
+  share: "Share"
+  tweet: "Tweet"
+  next: "Selanjutnya"
+  previous: "Sebelumnya"
+  newer: "Baru"
+  older: "Lama"
+  back_to_top: "Ke atas"
+  search_placeholder_text: "Masukkan kata kunci..."
+  powered_by: "Didukung oleh"
+id-ID:
+  <<: *DEFAULT_ID

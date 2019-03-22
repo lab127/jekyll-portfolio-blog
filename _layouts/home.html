@@ -1,0 +1,233 @@
+---
+layout: default
+---
+<!--================Home Banner Area =================-->
+<section class="home_banner_area">
+  <div class="banner_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="banner_content">
+            <h2>{{ site.title }}</h2>
+            <p>{{ site.description }}</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="home_left_img">
+            <img class="img-fluid" src="/assets/img/home-left.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================Start About Us Area =================-->
+<section class="about_us_area section_gap_top">
+  <div class="container">
+    <div class="row about_content align-items-center">
+      <div class="col-lg-6">
+        <div class="section_content">
+          <h6>Tentang</h6>
+          <h1>JASA PEMBUATAN WEBSITE</h1>
+          <p>Jadikan bisnis Anda lebih profesional dengan website modern. Tak perlu rumit lagi untuk membuat website profesional.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about_us_image_box justify-content-center">
+          <img class="img-fluid w-100" src="/assets/img/about_img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End About Us Area =================-->
+
+<!--================First Upcoming Games Area =================-->
+<section class="upcoming_games_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <h2>PLATFORM</h2>
+          <h1>PLATFORM</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="/assets/img/b_map1.png" alt="Jekyll">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="/assets/img/b_map2.png" alt="WordPress">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="/assets/img/b_map3.png" alt="Hugo">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Upcoming Games Area =================-->
+
+<!--================ Start Frequently Asked Questions Area ================-->
+<section class="frequently_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <h2>Kenapa Pilih Lab127?</h2>
+          <h1>Kenapa Pilih Lab127?</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row frequent_inner">
+      <div class="col-lg-5 col-md-5">
+        <div class="frequent_item">
+          <h3>Professional Web Developers</h3>
+          <p>Proses pembuatan website sesuai deadline oleh developer profesional dengan memperhatikan penyusunan konten yang mendukung kesuksesan usaha Anda.</p>
+        </div>
+      </div>
+      <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+        <div class="frequent_item">
+          <h3>Responsive &amp; SEO Friendly</h3>
+          <p>Jasa pembuatan website dengan design responsive dan optimasi SEO yang membantu meningkatkan hasil pencarian website di mesin pencari Google.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-5">
+        <div class="frequent_item">
+          <h3>Dokumentasi</h3>
+          <p>Lab127 akan memberikan arahan panduan yang jelas tentang operasional website yang akan/telah dibuat.</p>
+        </div>
+      </div>
+      <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+        <div class="frequent_item">
+          <h3>Komunikasi</h3>
+          <p>Komunikasi langsung baik untuk konsultasi atau panduan dalam mengangani masalah yang muncul ataupun yang sudah ada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================ End Frequently Asked Questions Area ================-->
+
+<!--================Start Recent Update Area =================-->
+<section id="portfolio" class="recent_update_area section_gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <h2>Portfolio</h2>
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+    </div>
+    <div class="recent_update_inner">
+      <div class="row">
+        {% assign sorted = site.portfolio | reverse %}
+        {% for portfolio in sorted limit:4 %}
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-gallery">
+            <div class="overlay"></div>
+            <img class="img-fluid w-100" src="/images/portfolio/thumbs/{{ portfolio.image }}" alt="{{ portfolio.title }}" title="{{ portfolio.title }}">
+            <div class="content">
+              <a class="pop-up-image" href="/images/portfolio/originals/{{ portfolio.image }}">
+                <i class="fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Recent Update Area =================-->
+
+<!--================ Start Contact Area ================-->
+<section class="pricing_area section_gap_top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <h2>KONTAK</h2>
+          <h1>KONTAK</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 hidden-md">
+        <div class="contact_item">
+          <h3 class="p_title">WhatsApp</h3>
+          <h1 class="p_icon"><i class="fa fa-whatsapp"></i></h1>
+          <div class="p_list">
+            <ul></ul>
+          </div>
+          <div class="p_btn">
+            <a class="gradient_btn" href="https://api.whatsapp.com/send?phone={{ site.contact.phone }}"><span>Hubungi Lewat WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact_item">
+          <h3 class="p_title">Email</h3>
+          <h1 class="p_icon"><i class="fa fa-envelope-o"></i></h1>
+          <div class="p_list">
+            <ul>
+              <li>Hubungi Lewat Email di Bawah Ini</li>
+              <li>{{ site.contact.email }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact_item">
+          <h3 class="p_title">Alamat</h3>
+          <h1 class="p_icon"><i class="fa fa-map-o"></i></h1>
+          <div class="p_list">
+            <ul>
+              <li>DUKUH RT 83 RW 18 GEDONG KIWO</li>
+              <li>MANTRIJERON YOGYAKARTA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================ End Contact Area ================-->
+
+<!--================ Start Blog Area ================-->
+<section class="blog_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <h2>ARTIKEL</h2>
+          <h1>ARTIKEL</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+      <div class="col-lg-4 col-md-6">
+        <div class="blog_items">
+          <div class="blog_img_box">
+            <img class="img-fluid" src="/images/360x/{{ post.image | default:'noimage.png'}}" alt="{{ post.title }}">
+          </div>
+          <div class="blog_content">
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--================ End Blog Area ================-->

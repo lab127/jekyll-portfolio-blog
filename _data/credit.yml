@@ -1,0 +1,98 @@
+#
+# License codes. Add more as you need them.
+#
+licenses:
+  perm:
+    name : special, by permission
+  tm:
+    name : Trademark
+  sil:
+    name : SIL Open Font License, 1.1
+    icon :
+    url  : 
+  mit:
+    name : MIT License
+    icon :
+    url  :
+  ccb2:
+    name : Creative Commons Attribution 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by/2.0/
+  ccb3:
+    name : Creative Commons Attribution 3.0 Unported
+    icon :
+    url  : https://creativecommons.org/licenses/by/3.0/
+  ccbsa2:
+    name : Creative Commons Attribution-ShareAlike 2.0
+    icon :
+    url  : https://creativecommons.org/licenses/by-sa/2.0/
+  ccbnc2:
+    name : Creative Commons Attribution-NonCommercial 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by-nc/2.0/
+  ccbncsa2:
+    name : Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by-nc-sa/2.0/
+  apa2:
+    name : Apache License, 2.0
+    icon :
+    url  :
+  gplv3:
+    name : Gnu Public License, 3.0
+    icon :
+    url  :
+#
+# 'lic' values correspond to the keys in the license hash above
+# 
+creds:
+  - for : CSS HostHub Construction
+    by  : Naim Lasker
+    url : 
+    lic : 
+  - for : Template Comodo
+    by  : Colorlib
+    url : //colorlib.com
+    lic : ccb3
+  - for : Mods for a Jekyll blog
+    by  : lab127
+    url : //lab127.github.io
+    lic : mit
+  - for : Icons
+    by  : Dave Gandy
+    url : //fortawesome.github.io/Font-Awesome/
+    lic : mit
+  - for : Syntax-highlighting
+    by  : Pygments.org
+    url : //pygments.org
+    lic : mit
+  - for : Popper
+    by  : Federico Zivolo
+    url : 
+    lic : mit
+  - for : Build framework
+    by  : Jekyll
+    url : //jekyllrb.com/
+    lic : mit
+  - for : jQuery validation
+    by  : Jörn Zaefferer
+    url : //jqueryvalidation.org/
+    lic : mit
+  - for : jQuery
+    by  : jQuery Foundation
+    url : https://jquery.com/
+    lic : mit
+  - for : Bootstrap v4.1.3
+    by  : The Bootstrap Authors
+    url : //getbootstrap.com/
+    lic : mit
+
+image-credit:
+  - src : /assets/img/kobu-agency-798655-unsplash.jpg
+    by  : kobu agency
+    url : //unsplash.com/photos/67L18R4tW_w
+    lic : ccb2
+  - src : /assets/img/irvan-smith-563894-unsplash.jpg
+    by  : irvan smith
+    url : //unsplash.com/photos/5eBW5GomfhY
+    lic : ccb2

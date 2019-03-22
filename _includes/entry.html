@@ -1,0 +1,35 @@
+<article class="row blog_item">
+  <div class="col-md-3 d-none d-md-block">
+    <div class="blog_info text-right">
+      <ul class="list">
+        <li>
+          {% assign author = site.data.author[entry.author] | default: site.author %}
+          {{ author.name }}
+          <i class="lnr lnr-user"></i>
+        </li>
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ entry.date | date_to_string }}</time>
+          <i class="lnr lnr-calendar-full"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="blog_post">
+      <img src="/images/750x/{{ entry.image | default:'noimage.png'}}" alt="{{ entry.title }}" title="{{ entry.title }}">
+    </div>
+    <div class="blog_details">
+      <h2>
+        <a href="{{ entry.url | relative_url }}">
+          {{ entry.title }}
+        </a>
+      </h2>
+      {% unless page.show_excerpts == false %}
+        {% if entry.excerpt %}
+          <p>{{ entry.excerpt | markdownify }}</p>
+          <a href="{{ entry.url | relative_url }}">Read More</a>
+        {% endif %}
+      {% endunless %}
+    </div>
+  </div>
+</article>

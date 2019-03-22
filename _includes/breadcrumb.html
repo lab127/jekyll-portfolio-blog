@@ -1,20 +1,4 @@
-<ul class="breadcrumb">
-  <li><a href="/">Home</a></li>
-  {% if page.layout == 'page' %}
-    <li>{{ page.title }}</li>
-  {% elsif page.layout == 'post' %}
-    {% assign lastcat = page.categories | last %}
-    {% for cat in page.categories %}
-      {% unless page.permalink and cat == lastcat %}
-        {% capture urlstr %}
-          {{ urlstr }}/{{ cat }}
-        {% endcapture %}
-        <li style="text-transform: capitalize;"><a href="{{ site.baseurl }}{{ urlstr }}">{{ cat }}</a></li>
-      {%  endunless %}
-    {% endfor %}
-    <li>{{ page.title }}</li>
-  {% elsif page.layout == 'work' %}
-    <li style="text-transform: capitalize;"><a href="/portfolio">Portfolio</a></li>
-    <li>{{ page.title }}</li>
-  {% endif %}
-</ul>
+<div class="page_link">
+  <a href="/blog/">Blog</a>
+  <a href="{{ page.url | default: '/' }}">{{ page.title | escape }}</a>
+</div>
