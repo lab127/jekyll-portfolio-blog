@@ -1,7 +1,7 @@
 ---
 title: Cara Membuat File tar.gz di Windows dengan 7-Zip
 excerpt: Membuat File tar.gz di Windows dengan 7-Zip Seperti Di Linux
-author: ronierush
+author: lab127
 image: targz.jpg
 date: 2019-03-07
 categories:

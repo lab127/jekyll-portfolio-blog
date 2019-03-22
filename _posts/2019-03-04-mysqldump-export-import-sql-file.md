@@ -1,7 +1,7 @@
 ---
 title: Mysqldump Export Import Sql File
 excerpt: Cara Export Import di MySql Dengan Terminal
-author: ronierush
+author: lab127
 image: banner-mysql.jpg
 date: 2019-03-04
 categories:
