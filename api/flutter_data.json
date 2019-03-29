@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Unsplash random Photo",
+      "link": "https://source.unsplash.com/random/800x600",
+      "imageUrl": "https://source.unsplash.com/random/800x600",
+      "user": {
+        "profileName": "Lab127",
+        "profileImageUrl": "https://avatars0.githubusercontent.com/u/12640394?s=76&v=4"
+      }
+    },
+    {
+      "id": 2,
+      "title": "800x600 Photo",
+      "link": "https://source.unsplash.com/random/800x600",
+      "imageUrl": "https://source.unsplash.com/random/800x600",
+      "user": {
+        "profileName": "Lab127",
+        "profileImageUrl": "https://avatars0.githubusercontent.com/u/12640394?s=76&v=4"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Unsplash api source.unsplash.com",
+      "link": "https://source.unsplash.com/random/800x600",
+      "imageUrl": "https://source.unsplash.com/random/800x600",
+      "user": {
+        "profileName": "Lab127",
+        "profileImageUrl": "https://avatars0.githubusercontent.com/u/12640394?s=76&v=4"
+      }
+    }
+  ]
+}
