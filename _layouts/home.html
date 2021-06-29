@@ -222,7 +222,7 @@ layout: default
             <img class="img-fluid" src="{{ site.baseurl }}/images/360x/{{ post.image | default:'noimage.png'}}" alt="{{ post.title }}">
           </div>
           <div class="blog_content">
-            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </div>
         </div>
       </div>
