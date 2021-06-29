@@ -26,7 +26,7 @@ title: Credit
 <div class="row">
   {% for image in site.data.credit.image-credit %}
   <div class="col-lg-3 col-md-6 col-sm-6">
-    <img src="{{ image.src }}">
+    <img src="{{ site.baseurl }}{{ image.src }}">
     <p class="text-center">{{ site.data.credits.licenses[image.lic].name }}</p>
     <p><a href="{{ image.url }}">{{ image.by }}</a></p>
   </div> 
