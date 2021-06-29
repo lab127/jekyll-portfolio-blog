@@ -8,4 +8,4 @@ tags:
   - cPanel
 ---
 
-<a href="//halaltren.com"><img class="imgfull" alt="halaltren" title="halaltren" src="/images/halaltren_com.jpg"></a>
+<a href="//halaltren.com"><img class="imgfull" alt="halaltren" title="halaltren" src="{{ site.baseurl }}/images/halaltren_com.jpg"></a>
