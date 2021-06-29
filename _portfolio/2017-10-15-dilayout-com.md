@@ -9,4 +9,4 @@ tags:
   - WhatsApp Api
 ---
 
-<a href="//dilayout.com"><img class="imgfull" alt="dilayout" title="dilayout" src="/images/dilayout_com.jpg"></a>
+<a href="//dilayout.com"><img class="imgfull" alt="dilayout" title="dilayout" src="{{ site.baseurl }}/images/dilayout_com.jpg"></a>
