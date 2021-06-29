@@ -1,5 +1,5 @@
 <div class="media post_item">
-  <img src="/images/100x/{{ entry.image | default:'noimage.png'}}" alt="post">
+  <img src="{{ site.baseurl }}/images/100x/{{ entry.image | default:'noimage.png'}}" alt="post">
   <div class="media-body">
     <a href="{{ entry.url }}"><h3>{{ entry.title }}</h3></a>
     <p><time datetime="{{ entry.date | date_to_xmlschema }}" class="post-date">{{ entry.date | date_to_string }}</time></p>
