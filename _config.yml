@@ -3,7 +3,7 @@ title: Lab127
 tagline: The Jekyll Butler
 description: Web Development. IT Services.
 url: ""
-baseurl: "web"
+baseurl: "/web"
 
 # Permalinks
 permalink: /blog/:year/:month/:day/:title/
