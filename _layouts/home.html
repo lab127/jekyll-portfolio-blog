@@ -14,7 +14,7 @@ layout: default
         </div>
         <div class="col-lg-6">
           <div class="home_left_img">
-            <img class="img-fluid" src="/assets/img/home-left.png" alt="">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/img/home-left.png" alt="">
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ layout: default
       </div>
       <div class="col-lg-6">
         <div class="about_us_image_box justify-content-center">
-          <img class="img-fluid w-100" src="/assets/img/about_img.png" alt="">
+          <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/img/about_img.png" alt="">
         </div>
       </div>
     </div>
@@ -58,17 +58,17 @@ layout: default
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="/assets/img/b_map1.png" alt="Jekyll">
+          <img src="{{ site.baseurl }}/assets/img/b_map1.png" alt="Jekyll">
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="/assets/img/b_map2.png" alt="WordPress">
+          <img src="{{ site.baseurl }}/assets/img/b_map2.png" alt="WordPress">
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="/assets/img/b_map3.png" alt="Hugo">
+          <img src="{{ site.baseurl }}/assets/img/b_map3.png" alt="Hugo">
         </div>
       </div>
     </div>
@@ -135,9 +135,9 @@ layout: default
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-gallery">
             <div class="overlay"></div>
-            <img class="img-fluid w-100" src="/images/portfolio/thumbs/{{ portfolio.image }}" alt="{{ portfolio.title }}" title="{{ portfolio.title }}">
+            <img class="img-fluid w-100" src="{{ site.baseurl }}/images/portfolio/thumbs/{{ portfolio.image }}" alt="{{ portfolio.title }}" title="{{ portfolio.title }}">
             <div class="content">
-              <a class="pop-up-image" href="/images/portfolio/originals/{{ portfolio.image }}">
+              <a class="pop-up-image" href="{{ site.baseurl }}/images/portfolio/originals/{{ portfolio.image }}">
                 <i class="fa fa-link"></i>
               </a>
             </div>
@@ -219,7 +219,7 @@ layout: default
       <div class="col-lg-4 col-md-6">
         <div class="blog_items">
           <div class="blog_img_box">
-            <img class="img-fluid" src="/images/360x/{{ post.image | default:'noimage.png'}}" alt="{{ post.title }}">
+            <img class="img-fluid" src="{{ site.baseurl }}/images/360x/{{ post.image | default:'noimage.png'}}" alt="{{ post.title }}">
           </div>
           <div class="blog_content">
             <a class="title" href="{{ post.url }}">{{ post.title }}</a>
