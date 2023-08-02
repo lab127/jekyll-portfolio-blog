@@ -25,7 +25,7 @@ sass:
 # Contact
 contact:
   phone: 6289675996935
-  email:
+  email: ronie2rush@gmail.com
 
 # Collections
 collections:
@@ -52,7 +52,6 @@ defaults:
       layout: post
       comments: true
       share: true
-
 
 # Custom vars
 version: 1.0.0

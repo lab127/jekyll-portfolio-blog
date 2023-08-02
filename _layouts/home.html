@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <!--================Home Banner Area =================-->
 <section class="home_banner_area">
   <div class="banner_inner">
@@ -14,7 +15,11 @@ layout: default
         </div>
         <div class="col-lg-6">
           <div class="home_left_img">
-            <img class="img-fluid" src="{{ site.baseurl }}/assets/img/home-left.png" alt="">
+            <img
+              class="img-fluid"
+              src="{{ site.baseurl }}/assets/img/home-left.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -31,12 +36,19 @@ layout: default
         <div class="section_content">
           <h6>Tentang</h6>
           <h1>JASA PEMBUATAN WEBSITE</h1>
-          <p>Jadikan bisnis Anda lebih profesional dengan website modern. Tak perlu rumit lagi untuk membuat website profesional.</p>
+          <p>
+            Jadikan bisnis Anda lebih profesional dengan website modern. Tak
+            perlu rumit lagi untuk membuat website profesional.
+          </p>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="about_us_image_box justify-content-center">
-          <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/img/about_img.png" alt="">
+          <img
+            class="img-fluid w-100"
+            src="{{ site.baseurl }}/assets/img/about_img.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -56,19 +68,36 @@ layout: default
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="{{ site.baseurl }}/assets/img/b_map1.png" alt="Jekyll">
+          <img src="{{ site.baseurl }}/assets/img/b_map1.png" alt="Jekyll" />
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="{{ site.baseurl }}/assets/img/b_map2.png" alt="WordPress">
+          <img src="{{ site.baseurl }}/assets/img/b_map2.png" alt="WordPress" />
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="new_games_item">
-          <img src="{{ site.baseurl }}/assets/img/b_map3.png" alt="Hugo">
+          <img src="{{ site.baseurl }}/assets/img/b_map3.png" alt="Hugo" />
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="{{ site.baseurl }}/assets/img/b_map4.png" alt="Hugo" />
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="{{ site.baseurl }}/assets/img/b_map5.png" alt="Hugo" />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="new_games_item">
+          <img src="{{ site.baseurl }}/assets/img/b_map6.png" alt="Hugo" />
         </div>
       </div>
     </div>
@@ -91,25 +120,39 @@ layout: default
       <div class="col-lg-5 col-md-5">
         <div class="frequent_item">
           <h3>Professional Web Developers</h3>
-          <p>Proses pembuatan website sesuai deadline oleh developer profesional dengan memperhatikan penyusunan konten yang mendukung kesuksesan usaha Anda.</p>
+          <p>
+            Proses pembuatan website sesuai deadline oleh developer profesional
+            dengan memperhatikan penyusunan konten yang mendukung kesuksesan
+            usaha Anda.
+          </p>
         </div>
       </div>
       <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
         <div class="frequent_item">
           <h3>Responsive &amp; SEO Friendly</h3>
-          <p>Jasa pembuatan website dengan design responsive dan optimasi SEO yang membantu meningkatkan hasil pencarian website di mesin pencari Google.</p>
+          <p>
+            Jasa pembuatan website dengan design responsive dan optimasi SEO
+            yang membantu meningkatkan hasil pencarian website di mesin pencari
+            Google.
+          </p>
         </div>
       </div>
       <div class="col-lg-5 col-md-5">
         <div class="frequent_item">
           <h3>Dokumentasi</h3>
-          <p>Lab127 akan memberikan arahan panduan yang jelas tentang operasional website yang akan/telah dibuat.</p>
+          <p>
+            Lab127 akan memberikan arahan panduan yang jelas tentang operasional
+            website yang akan/telah dibuat.
+          </p>
         </div>
       </div>
       <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
         <div class="frequent_item">
           <h3>Komunikasi</h3>
-          <p>Komunikasi langsung baik untuk konsultasi atau panduan dalam mengangani masalah yang muncul ataupun yang sudah ada.</p>
+          <p>
+            Komunikasi langsung baik untuk konsultasi atau panduan dalam
+            mengangani masalah yang muncul ataupun yang sudah ada.
+          </p>
         </div>
       </div>
     </div>
@@ -130,14 +173,22 @@ layout: default
     </div>
     <div class="recent_update_inner">
       <div class="row">
-        {% assign sorted = site.portfolio | reverse %}
-        {% for portfolio in sorted limit:4 %}
+        {% assign sorted = site.portfolio | reverse %} {% for portfolio in
+        sorted limit:4 %}
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-gallery">
             <div class="overlay"></div>
-            <img class="img-fluid w-100" src="{{ site.baseurl }}/images/portfolio/thumbs/{{ portfolio.image }}" alt="{{ portfolio.title }}" title="{{ portfolio.title }}">
+            <img
+              class="img-fluid w-100"
+              src="{{ site.baseurl }}/images/portfolio/thumbs/{{ portfolio.image }}"
+              alt="{{ portfolio.title }}"
+              title="{{ portfolio.title }}"
+            />
             <div class="content">
-              <a class="pop-up-image" href="{{ site.baseurl }}/images/portfolio/originals/{{ portfolio.image }}">
+              <a
+                class="pop-up-image"
+                href="{{ site.baseurl }}/images/portfolio/originals/{{ portfolio.image }}"
+              >
                 <i class="fa fa-link"></i>
               </a>
             </div>
@@ -170,7 +221,11 @@ layout: default
             <ul></ul>
           </div>
           <div class="p_btn">
-            <a class="gradient_btn" href="https://api.whatsapp.com/send?phone={{ site.contact.phone }}"><span>Hubungi Lewat WhatsApp</span></a>
+            <a
+              class="gradient_btn"
+              href="https://api.whatsapp.com/send?phone={{ site.contact.phone }}"
+              ><span>Hubungi Lewat WhatsApp</span></a
+            >
           </div>
         </div>
       </div>
@@ -219,10 +274,16 @@ layout: default
       <div class="col-lg-4 col-md-6">
         <div class="blog_items">
           <div class="blog_img_box">
-            <img class="img-fluid" src="{{ site.baseurl }}/images/360x/{{ post.image | default:'noimage.png'}}" alt="{{ post.title }}">
+            <img
+              class="img-fluid"
+              src="{{ site.baseurl }}/images/360x/{{ post.image | default:'noimage.png'}}"
+              alt="{{ post.title }}"
+            />
           </div>
           <div class="blog_content">
-            <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <a class="title" href="{{ site.baseurl }}{{ post.url }}"
+              >{{ post.title }}</a
+            >
           </div>
         </div>
       </div>
