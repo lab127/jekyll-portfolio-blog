@@ -1,6 +1,6 @@
 ---
-title: Mewlena Shop
-excerpt: Dapatkan produk-produk menarik Yessana Hijab dan Quail Hijab dari distributor resmi di Yogyakarta
+title: JarCase
+excerpt: custom phone cases for iPhone and Galaxy series
 image: jarcase.com.jpg
 tags:
   - WordPress
