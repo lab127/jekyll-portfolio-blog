@@ -3,7 +3,7 @@ title: Lab127
 tagline: Jasa Pembuatan Website
 description: Web Development. IT Services.
 url: ""
-baseurl: "/web"
+baseurl: "/jekyll-portfolio-blog"
 
 # Permalinks
 permalink: /blog/:year/:month/:day/:title/
